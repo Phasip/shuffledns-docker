@@ -16,7 +16,7 @@ jobs:
     - name: Monitor remotes
       run: |
         git ls-remote https://github.com/blechschmidt/massdns.git HEAD >  "${VERSION_FILE}"
-        git ls-remote https://github.com/projectdiscovery/shuffledns.git >>  "${VERSION_FILE}"
+        git ls-remote https://github.com/projectdiscovery/shuffledns.git HEAD >>  "${VERSION_FILE}"
         git ls-remote https://github.com/assetnote/commonspeak2-wordlists.git HEAD >> "${VERSION_FILE}"
     - name: Push changes
       run: |
